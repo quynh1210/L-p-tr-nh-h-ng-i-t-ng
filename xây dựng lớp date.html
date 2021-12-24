@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class MyDate {
+        day;
+        month;
+        year;
+
+        constructor(day, month, year) {
+            this._day = day;
+            this._month = month;
+            this._year = year;
+        }
+
+        get day() {
+            return this._day;
+        }
+
+        set day(value) {
+            this._day = value;
+        }
+
+        get month() {
+            return this._month;
+        }
+
+        set month(value) {
+            this._month = value;
+        }
+
+        get year() {
+            return this._year;
+        }
+
+        set year(value) {
+            this._year = value;
+        }
+
+        getDay() {
+            return this._day;
+        }
+
+        getMonth() {
+            return this._month;
+        }
+
+        getYear() {
+            return this._year;
+        }
+    }
+    let date = new MyDate(24,12,2021);
+    let day = date.getDay();
+    let month=date.getMonth();
+    let year= date.getYear();
+    alert(day+"/"+month+"/"+year+" Oh! Today is christmas day! Merry Christmas!");
+</script>
+</body>
+</html>
