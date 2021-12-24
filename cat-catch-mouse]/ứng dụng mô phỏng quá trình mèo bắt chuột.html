@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="cat-catch-mouse.js"></script>
+</head>
+<body>
+<script>
+    function count10() {
+        let i = 0;
+        let count = setInterval(() => {
+            res.innerHTML = `${i}`;
+            ++i;
+            if (i === 10) {
+                clearInterval(count);
+                console.log(`Done!`);
+            }
+
+        }, 1000)
+    }
+
+    count10();
+</script>
+</body>
+</html>
